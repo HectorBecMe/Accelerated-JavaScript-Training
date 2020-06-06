@@ -78,3 +78,18 @@ console.log('\nSTRICT MODE>>>');
 (function () {
   console.log('but this function is sloppy...');
 }());
+
+
+// DYNAMIC TYPING
+console.log('\nDYNAMIC TYPING>>>');
+var var1 = 5;
+var Var1 = 10;
+console.log(var1);
+console.log(Var1);
+
+var var2 = 5;
+console.log(var2);
+console.log(typeof var2);
+var2 = '10';
+console.log(var2);
+console.log(typeof var2);
