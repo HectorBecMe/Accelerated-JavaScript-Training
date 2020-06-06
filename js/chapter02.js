@@ -249,3 +249,13 @@ for (var i=0; i<5; i++){
   console.log('en el for: ' + i);
 }
 
+
+// CONTROL STRUCTURES NESTED LOOPS
+console.log('\nCONTROL STRUCTURES NESTED LOOPS>>>');
+for (var i=0; i<5; i++){
+  for (var j=0; j<2; j++){
+    console.log('en el for anidado:  ' + i*j);
+  }
+}
+
+
