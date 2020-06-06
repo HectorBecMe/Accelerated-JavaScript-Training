@@ -259,3 +259,30 @@ for (var i=0; i<5; i++){
 }
 
 
+// CONTROL STRUCTURES CONTROLLING LOOPS WITH BREAK CONTINUE
+console.log('\nCONTROL STRUCTURES CONTROLLING LOOPS WITH BREAK CONTINUE>>>');
+for (var i=0; i<5; i++){
+  if (i == 1){
+    break;
+  }
+  console.log('esperando el break: ' + i);
+}
+
+for (var i=0; i<5; i++){
+  if (i == 1){
+    continue;
+  }
+  console.log('esperando el continue: ' + i);
+}
+
+for (var i=0; i<5; i++){
+  for (var j=0; j<2; j++){
+    if (i==1) {
+      continue; // Solo afecta el loop en el que se utiliza
+    }
+    console.log(i + '. inside inner loop, j = ' + j);    
+  }
+  console.log(i + '. outer loop');
+}
+
+
