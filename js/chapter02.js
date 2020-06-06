@@ -243,3 +243,9 @@ switch (luckyNumber) {
 }
 
 
+// CONTROL STRUCTURES FOR LOOP
+console.log('\nCONTROL STRUCTURES FOR LOOP>>>');
+for (var i=0; i<5; i++){
+  console.log('en el for: ' + i);
+}
+
