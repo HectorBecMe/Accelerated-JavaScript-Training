@@ -162,7 +162,50 @@ console.log(calculator(15,2));
 
 // CONTROL STRUCTURES IF STATEMENT
 console.log('\nCONTROL STRUCTURES IF STATEMENT>>>');
-var condition = 1; // 1 = true
+var condition = 1;
+var anotherCondition = false;
+if (condition) {
+  console.log('Executed!');
+} else if (anotherCondition) {
+  console.log('Still Executed!');
+} else {
+  console.log('Not Executed!');
+}
+
+// 1 se interpreta como TRUE, 
+console.log(1 == true);
+// pero no es TRUE porque 1 es number no BOOLEAN
+console.log(1 === true);
+
+// 0 se interpreta como FALSE, 
+console.log(0 == false);
+// pero no es FALSE porque 0 es number no BOOLEAN
+console.log(0 === false);
+
+// Cualquier numero diferente de 0 ó 1
+// no puede ser interpretado coo BOOLEANAl 
+var condition = 2;
+var anotherCondition = false; // 0 = false
+if (2) {
+  console.log('Executed!');
+} else if (anotherCondition) {
+  console.log('Still Executed!');
+} else {
+  console.log('Not Executed!');
+}
+
+console.log(2 == true);
+console.log(2 == false);
+
+// Cualquier valor diferente de 0
+// Al ser utilizado en una exprecion BOOLEANA 
+// es interpertado como TRUE
+console.log(2 != false);
+console.log(2 != true);
+
+
+// NULL es inperpretado como FALSE
+var condition = null;
 var anotherCondition = false; // 0 = false
 if (condition) {
   console.log('Executed!');
