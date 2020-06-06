@@ -137,3 +137,24 @@ var anotherFunction2 = varFunction();
 // se genera un error.
 // anotherFunction2();
 console.log(anotherFunction2);
+
+
+// FUNCTIONS ARGUMENTS RETURNING DATA
+console.log('\nFUNCTIONS ARGUMENTS RETURNING DATA>>>');
+// Return value
+function returnValue(){
+  var stringVar = 'Value returned for returnValue';  
+  return stringVar;
+}
+var returned = returnValue();
+console.log(returned);
+
+// Uso de argumentos
+function adding(number1, number2){
+  return number1 + number2;
+}
+var returned = adding(10, 8);
+console.log(returned);
+
+var calculator = adding;
+console.log(calculator(15,2));
