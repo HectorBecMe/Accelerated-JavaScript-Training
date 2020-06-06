@@ -229,3 +229,17 @@ switch (luckyNumber) {
     console.log('Default');
     break;
 }
+
+
+// CONTROL STRUCTURES SWITCH BREAK
+console.log('\nCONTROL STRUCTURES SWITCH BREAK>>>');
+switch (luckyNumber) {
+  case 1:
+    console.log('Is 1');
+  case 9:
+    console.log('Is 9');
+  default:
+    console.log('Default');
+}
+
+
