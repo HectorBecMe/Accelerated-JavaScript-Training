@@ -353,3 +353,69 @@ do {
 while (condition);
 
 
+// OPERATORS ADDITION
+console.log('\nOPERATORS ADDITION>>>');
+var a = 11;
+var b = 3;
+var result;
+
+console.log(a + b);
+
+result = a + b;
+console.log(result);
+
+a += b;
+console.log(a);
+
+b ++;
+console.log(b);
+
+var a = 5.2;
+var b = 4.5;
+console.log(a + b);
+
+var a = 'Join ';
+var b = 'us!';
+console.log(a + b);
+
+var a = 'Join ';
+var b = 3;
+console.log(a + b);
+
+var a = 3;
+var b = ' Join';
+console.log(a + b);
+
+var a = true;
+var b = ' Join';
+console.log(a + b);
+
+var a = [1,2];
+var b = ' Join';
+console.log(a + b);
+
+var a = 12;
+var b = '1';
+console.log(a + b);
+
+var a = 12;
+var b = true;
+console.log(a + b);
+
+var a = true;
+var b = true;
+console.log(a + b);
+
+var a = 12;
+var b = null;
+console.log(a + b);
+
+var a = 12;
+var b = undefined;
+console.log(a + b);
+
+var a = 12;
+var b = NaN;
+console.log(a + b);
+
+
