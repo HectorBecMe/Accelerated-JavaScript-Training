@@ -419,3 +419,29 @@ var b = NaN;
 console.log(a + b);
 
 
+// OPERATORS SUBTRACTION
+console.log('\nOPERATORS SUBTRACTION>>>');
+var a = 12;
+var b = 1;
+var result;
+
+console.log(a - b);
+
+result = a - b;
+console.log(result);
+
+a -= b;
+console.log(a);
+
+b --;
+console.log(b);
+
+var a = 'Split us';
+var b = 'us';
+console.log(a - b);
+
+var a = 12;
+var b = ' 1';
+console.log(a - b);
+
+
