@@ -93,3 +93,12 @@ console.log(typeof var2);
 var2 = '10';
 console.log(var2);
 console.log(typeof var2);
+
+
+// HOISTING
+console.log('\nHOISTING>>>');
+// JavaScript primero busca 
+// las declaraciones de variables inicializadas
+usoAntes = 5;
+console.log(usoAntes);
+var usoAntes;
