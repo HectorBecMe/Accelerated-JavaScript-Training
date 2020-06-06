@@ -66,3 +66,15 @@ var objeto = {
 console.log(objeto);
 console.log(objeto.name);
 console.log(typeof objeto);
+
+
+// STRICT MODE
+console.log('\nSTRICT MODE>>>');
+(function () {
+  'use strict';
+  console.log('this function is strict...');
+}());
+
+(function () {
+  console.log('but this function is sloppy...');
+}());
