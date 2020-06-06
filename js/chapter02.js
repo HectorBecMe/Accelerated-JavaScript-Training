@@ -55,3 +55,14 @@ console.log(null === undefined);
 variable2 = NaN;
 console.log(variable2);
 console.log(typeof variable2);
+
+
+// VARIABLES OBJECTS
+console.log('\nVARIABLES OBJECTS>>>');
+// OBJETOS
+var objeto = {
+  name: 'Hec'
+}
+console.log(objeto);
+console.log(objeto.name);
+console.log(typeof objeto);
