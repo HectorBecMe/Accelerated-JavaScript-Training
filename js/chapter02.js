@@ -324,3 +324,32 @@ for (var i=0; i < array.length; i++){
 }
 
 
+// CONTROL STRUCTURES WHILE LOOP
+console.log('\nCONTROL STRUCTURES WHILE LOOP>>>');
+var number = 5;
+while (number < 7) {
+  console.log('En el while: ' + number);
+  number++;
+}
+
+var condition = true;
+var i = 2;
+while (condition) {
+  if (i == 3 ) {
+    condition = false;
+  }
+  console.log('Esperando cambio de condicion desde while: ' + i);
+  i++;
+}
+
+condition =false;
+while (condition) {
+  console.log('while, NOT Executed if condiction is false');
+}
+
+do {
+  console.log('Do while, Executed at least ONE time');
+}
+while (condition);
+
+
