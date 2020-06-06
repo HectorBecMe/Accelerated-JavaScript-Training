@@ -306,3 +306,21 @@ for (var i=2; i>1; i--){
 }
 
 
+// CONTROL STRUCTURES LOOPING THROUGH ARRAYS
+console.log('\nCONTROL STRUCTURES LOOPING THROUGH ARRAYS>>>');
+var array = [1,2,3];
+for (var i=0; i<3; i++){
+  console.log(array[i]);
+}
+
+var array = [1,2,3];
+for (var i=0; i<5; i++){
+  console.log(array[i]);
+}
+
+var array = [8,5,77];
+for (var i=0; i < array.length; i++){
+  console.log(array[i]);
+}
+
+
