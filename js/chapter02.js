@@ -102,3 +102,38 @@ console.log('\nHOISTING>>>');
 usoAntes = 5;
 console.log(usoAntes);
 var usoAntes;
+
+
+// FUNCTIONS CREATING AND CALLING THEM
+console.log('\nFUNCTIONS CREATING AND CALLING THEM>>>');
+function calc(){
+  console.log('Inside function!');
+}
+calc();
+
+// Tambien existe Hoisting para funciones
+hola();
+function hola(){
+  console.log('Hola!!');
+}
+console.log(typeof hola);
+
+// Inicializacion de variable con una funcion
+var varFunction = function () {
+  console.log('Inside varFunction');
+};
+varFunction();
+console.log(typeof varFunction);
+
+// Inicializacion de variablre con otra variable funcion
+var anotherFunction = varFunction;
+anotherFunction();
+
+// Solo se ejecuta la funcion varFunction()
+// al no tener un return anotherFunction2 continua siendo
+// una variable.
+var anotherFunction2 = varFunction();
+// Al ser una variable e intentar ejecutarla como funcion
+// se genera un error.
+// anotherFunction2();
+console.log(anotherFunction2);
