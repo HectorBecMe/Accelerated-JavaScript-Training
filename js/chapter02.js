@@ -158,3 +158,16 @@ console.log(returned);
 
 var calculator = adding;
 console.log(calculator(15,2));
+
+
+// CONTROL STRUCTURES IF STATEMENT
+console.log('\nCONTROL STRUCTURES IF STATEMENT>>>');
+var condition = 1; // 1 = true
+var anotherCondition = false; // 0 = false
+if (condition) {
+  console.log('Executed!');
+} else if (anotherCondition) {
+  console.log('Still Executed!');
+} else {
+  console.log('Not Executed!');
+}
