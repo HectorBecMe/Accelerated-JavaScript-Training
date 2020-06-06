@@ -286,3 +286,23 @@ for (var i=0; i<5; i++){
 }
 
 
+// CONTROL STRUCTURES FOR LOOP VARIATIONS
+console.log('\nCONTROL STRUCTURES FOR LOOP VARIATIONS>>>');
+for (var i=2; i<5; i++){
+  console.log('exprecion inicial diferente de 0: ' + i);
+}
+
+for (var i=2; i<5; i=i+3){
+  console.log('con operacion en exprecion final: ' + i);
+}
+
+// Ocaciona un LOOP infinito
+//for (var i=2; i<5; i--){
+//  console.log('con operacion en exprecion final: ' + i);
+//}
+
+for (var i=2; i>1; i--){
+  console.log('con decremento en exprecion final: ' + i);
+}
+
+
