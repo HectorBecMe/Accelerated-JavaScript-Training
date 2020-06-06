@@ -203,7 +203,6 @@ console.log(2 == false);
 console.log(2 != false);
 console.log(2 != true);
 
-
 // NULL es inperpretado como FALSE
 var condition = null;
 var anotherCondition = false; // 0 = false
@@ -213,4 +212,20 @@ if (condition) {
   console.log('Still Executed!');
 } else {
   console.log('Not Executed!');
+}
+
+
+// CONTROL STRUCTURES SWITCH
+console.log('\nCONTROL STRUCTURES SWITCH>>>');
+var luckyNumber = 9;
+switch (luckyNumber) {
+  case 1:
+    console.log('Is 1');
+    break;
+  case 9:
+    console.log('Is 9');
+    break;
+  default:
+    console.log('Default');
+    break;
 }
