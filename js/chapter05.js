@@ -224,3 +224,44 @@ obj.obfn.call(person, 'Hello ');  // Ejecucion inmediata
 obj.obfn.apply(person, ['Hello ']); // Array de argumentos
 
 
+// CREATING PROPERTIES WITH DEFINEPROPERTY
+console.log('\nCREATING PROPERTIES WITH DEFINEPROPERTY>>>');
+var account = {
+  cash: 12000,
+  _name: 'Default',
+  withraw: function(amount) {
+    this.cash -= amount;
+    console.log('Withdrew ' + amount + ', new cash reserve is: ' + this.cash);
+  }
+};
+
+Object.defineProperty(account, 'deposit', {
+  value: function (amount) {
+    this.cash += amount;
+  }  
+});
+
+account.deposit(3000);
+account.withraw(1000);
+
+Object.defineProperty(account, 'name', {
+  // Definicion de ATTRIBUTE de la PROPERTY
+  // value: 'Aine',
+  // writable: true,
+
+  // Cuando se define un GET y un SET
+  // no se permite el ATTRIBUTE VALUE
+  get: function (){
+    return 'Hola ' + this._name + ', dijo el get ';
+  },
+  set: function (name){
+    if (name == 'Hec') {
+      this._name = name + '(seted)';
+    }
+  }
+});
+
+console.log(account.name); // Ejecucion implicita de metodo GET
+account.name = 'ID000-3'; // Ejecucion implicita de metodo SET
+console.log(account.name); 
+console.log(account._name); 
