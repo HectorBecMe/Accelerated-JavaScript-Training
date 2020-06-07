@@ -95,3 +95,13 @@ personAnna.name = 'Anna';
 personAnna.greet();
 
 
+// PROTOTYPES SUMMARY
+console.log('\nPROTOTYPES SUMMARY>>>');
+console.log(personAnna.__proto__ == personP);
+console.log(personAnna.__proto__.__proto__ == Object.prototype);
+
+console.log(Object.getPrototypeOf(personAnna));
+console.log(Object.getPrototypeOf(personP));
+console.log(Object.getPrototypeOf(personAnna) == personP);
+
+
