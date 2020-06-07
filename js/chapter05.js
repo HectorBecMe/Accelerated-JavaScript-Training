@@ -68,17 +68,30 @@ console.log(anotherPerson.age);
 
 // PROTOTYPES INTRODUCTION
 console.log('\nPROTOTYPES INTRODUCTION>>>');
-var person = {
+var personP = {
   name: 'Moshi',
-  age: 27
+  age: 3
 };
-console.log(person.__proto__);
-console.log(person.toString());
+console.log(personP.__proto__);
+console.log(personP.toString());
 
 Object.prototype.greet = function(){
-  console.log('Hi!');
+  console.log('Hello there, I am !' + this.name + '!');
 };
 
-person.greet();
+personP.greet();
+
+
+// PROTOTYPES IN ACTION
+console.log('\nPROTOTYPES IN ACTION>>>');
+var personHec = Object.create(personP);
+console.log(personHec.name); 
+personHec.greet();
+
+var personAnna = Object.create(personP);
+personAnna.greet();
+
+personAnna.name = 'Anna';
+personAnna.greet();
 
 
