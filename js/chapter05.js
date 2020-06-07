@@ -1,7 +1,7 @@
 // OBJECT BASICS LITERAL NOTATION
 console.log('\nOBJECT BASICS LITERAL NOTATION>>>');
-var person = {
-  'first-name': 'hec-bec-me',
+var name = 'Global Name';
+var person = {  
   name: 'Hec',
   age: 40,
   detaild: {
@@ -10,7 +10,8 @@ var person = {
   },
   greet: function() {
     console.log('Hello, I am ' + this.name);
-  }
+  },
+  'first-name': 'hec-bec-me'
 };
 
 console.log(person.name);
@@ -28,3 +29,7 @@ console.log(typeof person.name);
 console.log(person['first-name']);
 
 
+// PROPERTIES THIS
+console.log('\nPROPERTIES THIS>>>');
+person.name = 'Aine';
+console.log(person);
