@@ -106,3 +106,13 @@ console.log(arrayUno.join(arrayDos));
 console.log(arrayUno.join('.-.--'));
 
 
+// REDUCING ARRAYS
+console.log('\nREDUCING ARRAYS>>>');
+var array = [1,2,3,4];
+console.log(array);
+console.log(array.reduce(function(accumulator, currentValue, index){
+  console.log('Index:' +index+ ', Total: '+accumulator+', Value: '+currentValue);
+  return accumulator + currentValue;
+}));
+
+
