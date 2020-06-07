@@ -205,3 +205,22 @@ var person = {
 obj.obfn.bind(person)();
 
 
+// HANDLING THIS WITH BIND CALL APPLY
+console.log('\nHANDLING THIS WITH BIND CALL APPLY>>>');
+function fn(message) {
+  console.log(message + this.name);
+}
+
+var obj = {
+  obfn: fn
+};
+
+var person = {
+  name : 'Hec'
+};
+
+obj.obfn.bind(person, 'Hello ')();
+obj.obfn.call(person, 'Hello ');  // Ejecucion inmediata
+obj.obfn.apply(person, ['Hello ']); // Array de argumentos
+
+
