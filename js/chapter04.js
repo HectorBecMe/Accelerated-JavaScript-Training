@@ -18,3 +18,12 @@ array[5] = 100;
 console.log(array);
 
 
+// THE FOREACH METHOD
+console.log('\nTHE FOREACH METHOD>>>');
+var array = [1,2,3];
+
+array.forEach(function(element){
+  console.log(element);
+});
+
+
