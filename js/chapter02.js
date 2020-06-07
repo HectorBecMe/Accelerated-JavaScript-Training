@@ -548,3 +548,29 @@ console.log(isNaN(NaN));
 console.log(0 == null);
 console.log(null == undefined);
 console.log(0 == undefined);
+
+
+// OPERATORS BOOLEAN
+console.log('\nOPERATORS BOOLEAN>>>');
+if (1 == 1 && 2 == 2) {
+  console.log('True');
+} else {
+  console.log('False');
+}
+
+if ((1 == 1) && (2 == 3)) {
+  console.log('True');
+} else {
+  console.log('False');
+}
+
+console.log((1 == 1) && (2 == 3));
+console.log((1 == 1) || (2 == 3) || (4 == 5));
+console.log((1 == 2) || (2 == 3) || (4 == 5));
+console.log((1 == 1) || (2 == 3) && (4 == 5));
+console.log((1 == 1) && (2 == 3) || (4 == 5));
+console.log((1 == 1) && (2 == 3) || (4 == 4));
+console.log(((1 == 1) && (2 == 3)) || (4 == 4));
+
+var isTrue = true;
+console.log(!isTrue);
