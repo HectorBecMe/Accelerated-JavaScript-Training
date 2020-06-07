@@ -15,3 +15,12 @@ console.log(window.document);
 //window.open('http://www.google.com');
 
 
+// LOCATION OBJECT
+console.log('\nLOCATION OBJECT>>>');
+console.log(location);
+console.log(location.hostname);
+console.log(location.pathname);
+// location.reload();
+//location.replace('https://www.google.com');
+
+
