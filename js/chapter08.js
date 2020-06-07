@@ -95,3 +95,13 @@ console.log(today.getMonth());
 console.log(today.getFullYear());
 
 
+// REGULAR EXPRESSIONS
+console.log('\nREGULAR EXPRESSIONS>>>');
+var string = 'abc';
+var pattern = /ab/;
+console.log(string);
+console.log(pattern);
+
+console.log(pattern.exec(string));
+console.log(pattern.test(string));
+console.log(string.match(pattern));
