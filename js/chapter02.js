@@ -523,3 +523,20 @@ var b = Infinity;
 console.log(a / b);
 
 
+// OPERATORS COMPARING VALUES
+console.log('\nOPERATORS COMPARING VALUES>>>');
+console.log(1 == 1); // Compara valor
+console.log(1 === 1); // Compara valor y Tipo
+console.log(1 == '1'); // Compara valor y Tipo
+console.log(1 === '1'); // Compara valor y Tipo
+
+console.log(1 != 2);
+console.log(1 != '1');
+console.log(1 !== '1');
+
+console.log(1 > 0);
+console.log(1 > 1);
+console.log(1 >= 1);
+console.log(1 >= '1');
+
+
