@@ -1,7 +1,6 @@
 // BASICS MANAGING ELEMENTS
 console.log('\nBASICS MANAGING ELEMENTS>>>');
 var array = [1,2,3];
-
 console.log(array.length);
 
 console.log(array);
@@ -21,7 +20,6 @@ console.log(array);
 // THE FOREACH METHOD
 console.log('\nTHE FOREACH METHOD>>>');
 var array = [1,2,3];
-
 array.forEach(function(element){
   console.log(element);
 });
@@ -30,7 +28,6 @@ array.forEach(function(element){
 // WORKING WITH ELEMENTS PUSH POP UNSHIFT AND SHIFT
 console.log('\nWORKING WITH ELEMENTS PUSH POP UNSHIFT AND SHIFT>>>');
 var array = [1,2,3,,];
-
 array.push(9); // New element at end of Array
 console.log(array);
 
@@ -40,7 +37,32 @@ console.log(array);
 array.shift(); // Remove first element
 console.log(array);
 
-array.unshift('NUEVO'); // New element at beginning of Array
+array.unshift('NEW'); // New element at beginning of Array
+console.log(array);
+
+
+// WORKING WITH PARTS OF AN ARRAY INDEXOF SPLICE AND SLICE
+console.log('\nWORKING WITH PARTS OF AN ARRAY INDEXOF SPLICE AND SLICE>>>');
+// INDEXOF
+var array = ['NEW',1,2,3,4];
+console.log(array.indexOf('NEW'));
+array[array.indexOf('NEW')] = 'OLD';
+console.log(array);
+
+// SPLICE
+var newArray = array.splice(3); // INDEX INICIAL, HASTA EL FINAL
+console.log(newArray);
+console.log(array);
+
+var array = ['OLD',1,2,3,4];
+var newArray = array.splice(2,2); // INDEX INICIAL, NUMERO ELEMENTOS
+console.log(newArray);
+console.log(array);
+
+// SLICE
+var array = ['OLD',1,2,3,4];
+var newArray = array.slice(1,3); // INDEX INICIAL, INDEX FINAL SIN INCLUIRLO
+console.log(newArray);
 console.log(array);
 
 
