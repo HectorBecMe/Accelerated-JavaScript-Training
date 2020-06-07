@@ -591,3 +591,10 @@ var result = (a == b) ? 'Equal' : 'Not Equal';
 console.log(result);
 
 
+// OPERATORS PRECEDENCE
+console.log('\nOPERATORS PRECEDENCE>>>');
+var a = 5;
+var b = 6;
+
+console.log(a + b * 2);
+console.log((a + b) * 2);
