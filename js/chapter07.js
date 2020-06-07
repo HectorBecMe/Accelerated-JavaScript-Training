@@ -13,3 +13,17 @@ console.log(calc);
 console.log(calc());
 
 
+// IMMEDIATELY INVOKED FUNCTION EXECUTIONS IIFES
+console.log('\nIMMEDIATELY INVOKED FUNCTION EXECUTIONS IIFES>>>');
+(function calc(input) {
+  var number = input;
+  console.log(number);
+})(10);
+
+var obj = {};
+(function calc() {
+  obj.name = 'Hec';
+})(obj);
+console.log(obj);
+
+
