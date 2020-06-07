@@ -265,3 +265,33 @@ console.log(account.name); // Ejecucion implicita de metodo GET
 account.name = 'ID000-3'; // Ejecucion implicita de metodo SET
 console.log(account.name); 
 console.log(account._name); 
+
+
+// IMPORTANT BUILT IN METHODS AND PROPERTIES
+console.log('\nIMPORTANT BUILT IN METHODS AND PROPERTIES>>>');
+var person = {
+  name: 'Hec',
+  secondName: 'BecMe',
+  age: 40,
+  greet: function() {
+    console.log('Hello');
+  }
+};
+
+// Borra PROPERTY
+delete person.name;
+console.log(person.name);
+
+// Busca PROPERTY
+console.log('secondName' in person);
+console.log('name' in person);
+
+for (var field in person){
+  console.log(field);
+}
+
+for (var field in person){
+  console.log(field + ' = ' + person[field]);
+}
+
+console.log(person);
