@@ -31,11 +31,24 @@ console.log(document.URL);
 console.log(document.title);
 console.log(document.body);
 console.log(document.body.children);
-console.log(document.body.children[0].textContent);
-document.body.children[0].textContent = 'Something else!!';
-document.body.children[0].style.backgroundColor = 'red';
+console.log(document.body.children[1].textContent);
+document.body.children[1].textContent = 'Something else!!';
+document.body.children[1].style.backgroundColor = 'red';
 
-console.log(document.body.children[1].children[0]);
-document.body.children[1].children[0].style.backgroundColor = 'blue';
+console.log(document.body.children[0].children[0]);
+document.body.children[0].children[0].style.backgroundColor = 'blue';
+
+
+// TRAVERSING THE DOM
+console.log('\nTRAVERSING THE DOM>>>');
+// LONG WAY
+console.log(document.body.children[0].children[0]);
+
+// BETTER WAY
+console.log(document.body.lastElementChild);
+console.log(document.body.firstElementChild);
+console.log(document.body.firstElementChild.firstElementChild);
+console.log(document.body.firstElementChild.firstElementChild.nextElementSibling);
+console.log(document.body.firstElementChild.firstElementChild.parentElement);
 
 
