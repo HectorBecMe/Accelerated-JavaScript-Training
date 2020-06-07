@@ -86,3 +86,23 @@ console.log(array);
 console.log(mappedArray.reverse());
 
 
+// THE DIFFERENCE BETWEEN CONCAT AND JOIN
+console.log('\nTHE DIFFERENCE BETWEEN CONCAT AND JOIN>>>');
+var array = ['OLD',1,2,3,4];
+var newArray = ['join', 'me'];
+
+console.log(array.concat(newArray));
+console.log(array);
+console.log(newArray);
+
+console.log(array.join(newArray));
+console.log(array);
+console.log(newArray);
+
+var arrayUno = [1,2,3,4];
+var arrayDos = ['.-','.--','.---'];
+
+console.log(arrayUno.join(arrayDos));
+console.log(arrayUno.join('.-.--'));
+
+
