@@ -50,7 +50,7 @@ console.log(anotherPerson == person);
 var person1 = {  
   name: 'Hec',
   age: 40
-}
+};
 console.log(person1 == person);
 
 
@@ -64,5 +64,21 @@ var anotherPerson = Object.create(person);
 anotherPerson.name = 'Anna';
 console.log(anotherPerson);
 console.log(anotherPerson.age);
+
+
+// PROTOTYPES INTRODUCTION
+console.log('\nPROTOTYPES INTRODUCTION>>>');
+var person = {
+  name: 'Moshi',
+  age: 27
+};
+console.log(person.__proto__);
+console.log(person.toString());
+
+Object.prototype.greet = function(){
+  console.log('Hi!');
+};
+
+person.greet();
 
 
