@@ -66,3 +66,23 @@ console.log(newArray);
 console.log(array);
 
 
+// FILTERING MAPPING AND REVERSING ARRAY ELEMENTS
+console.log('\nFILTERING MAPPING AND REVERSING ARRAY ELEMENTS>>>');
+// FILTER ARRAY
+var array = ['OLD',1,2,3,4];
+var filteredArray = array.filter(function(value){
+  return value > 2;
+});
+console.log(filteredArray);
+
+// MAP ARRAY
+var mappedArray = array.map(function(value){
+  return value * 2;
+});
+console.log(mappedArray);
+console.log(array);
+
+// REVERSE ARRAY
+console.log(mappedArray.reverse());
+
+
