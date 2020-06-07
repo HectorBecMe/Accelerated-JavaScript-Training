@@ -27,3 +27,20 @@ array.forEach(function(element){
 });
 
 
+// WORKING WITH ELEMENTS PUSH POP UNSHIFT AND SHIFT
+console.log('\nWORKING WITH ELEMENTS PUSH POP UNSHIFT AND SHIFT>>>');
+var array = [1,2,3,,];
+
+array.push(9); // New element at end of Array
+console.log(array);
+
+array.pop(); // Remove last element
+console.log(array);
+
+array.shift(); // Remove first element
+console.log(array);
+
+array.unshift('NUEVO'); // New element at beginning of Array
+console.log(array);
+
+
