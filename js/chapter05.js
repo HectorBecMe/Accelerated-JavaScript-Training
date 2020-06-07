@@ -186,3 +186,22 @@ function Person() {
 var person = new Person();
 
 
+// THE THIS KEYWORD AND WHY IT MIGHT BEHAVE STRANGELY
+console.log('\nTHE THIS KEYWORD AND WHY IT MIGHT BEHAVE STRANGELY>>>');
+function fn(){
+  console.log(this);
+}
+fn();
+
+var obj = {
+  obfn: fn
+};
+obj.obfn();
+obj.obfn.bind(this)();
+
+var person = {
+  name: 'Hec'
+};
+obj.obfn.bind(person)();
+
+
