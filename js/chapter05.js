@@ -38,8 +38,19 @@ console.log(person);
 // ALTERNATIVE WAY OF CREATING OBJECTS USING THE OBJECT CONSTRUCTOR
 console.log('\nALTERNATIVE WAY OF CREATING OBJECTS USING THE OBJECT CONSTRUCTOR>>>');
 var anotherPerson = new Object();
-anotherPerson.name = 'Mar';
+anotherPerson.name = 'Hec';
 anotherPerson.age = 40;
 console.log(anotherPerson);
+
+
+// OBJECTS ARE REFERENCE TYPES REFRESHER
+console.log('\nOBJECTS ARE REFERENCE TYPES REFRESHER>>>');
+console.log(anotherPerson == person);
+
+var person1 = {  
+  name: 'Hec',
+  age: 40
+}
+console.log(person1 == person);
 
 
