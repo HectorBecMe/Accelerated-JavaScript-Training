@@ -54,3 +54,15 @@ var person1 = {
 console.log(person1 == person);
 
 
+// OBJECT CREATE
+console.log('\nOBJECT CREATE>>>');
+var anotherPerson = Object.create(null);
+anotherPerson.name = 'Anna';
+console.log(anotherPerson);
+
+var anotherPerson = Object.create(person);
+anotherPerson.name = 'Anna';
+console.log(anotherPerson);
+console.log(anotherPerson.age);
+
+
