@@ -441,7 +441,49 @@ var b = 'us';
 console.log(a - b);
 
 var a = 12;
-var b = ' 1';
+var b = '1';
 console.log(a - b);
+
+
+// OPERATORS MULTIPLICATION FLOATING POINT PROBLEMS
+console.log('\nOPERATORS MULTIPLICATION FLOATING POINT PROBLEMS>>>');
+var a = 12;
+var b = 2;
+
+console.log(a * b);
+
+a *= b;
+console.log(a);
+
+var a = 1.3;
+var b = 2.2;
+
+console.log(a * b);
+
+if ((a * b).toFixed(2) == 2.86){
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+var a = 2;
+var b = '2.2';
+console.log(a * b);
+
+var a = 2;
+var b = 'Join';
+console.log(a * b);
+
+var a = 'another';
+var b = 'Join';
+console.log(a * b);
+
+var a = 12;
+var b = null;
+console.log(a * b);
+
+var a = 12;
+var b = Infinity;
+console.log(a * b);
 
 
