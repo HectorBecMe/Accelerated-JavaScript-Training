@@ -158,3 +158,31 @@ console.log(hec);
 console.log(moshi);
 
 
+// OBJECT CREATION PROTOTYPES SUMMARY
+console.log('\nOBJECT CREATION PROTOTYPES SUMMARY>>>');
+//LITERAL NOTATION
+var person = {
+  name: 'Hec',
+  age: 40
+};
+console.log(person instanceof Object);
+
+// NEW Object
+var person = new Object();
+person.name = 'Hec';
+person.age = 40;
+
+// Object.create 
+var person = Object.create(null);
+person.name = 'Hec';
+person.age = 40;
+console.log(person instanceof Object);
+
+// CONSTRUCTOR FUNCTION
+function Person() {
+  this.name = 'hec';
+  this.age = 40;
+}
+var person = new Person();
+
+
