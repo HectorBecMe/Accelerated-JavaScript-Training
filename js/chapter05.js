@@ -144,3 +144,17 @@ anotherPerson.greetGeneral();
 console.log(person instanceof PersonC);
 
 
+// CONSTRUCTOR FUNCTIONS ARGUMENTS
+console.log('\nCONSTRUCTOR FUNCTIONS ARGUMENTS>>>');
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+var hec = new Person('Hec', 40);
+var moshi = new Person('Aine', 4);
+
+console.log(hec);
+console.log(moshi);
+
+
