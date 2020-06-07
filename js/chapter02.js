@@ -574,3 +574,20 @@ console.log(((1 == 1) && (2 == 3)) || (4 == 4));
 
 var isTrue = true;
 console.log(!isTrue);
+
+
+// OPERATORS TERNARY OPERATOR
+console.log('\nOPERATORS TERNARY OPERATOR>>>');
+var a = 5;
+var b = 5;
+
+if (a == b ){
+  console.log('Equal');
+} else {
+  console.log('Not Equal');
+}
+
+var result = (a == b) ? 'Equal' : 'Not Equal';
+console.log(result);
+
+
