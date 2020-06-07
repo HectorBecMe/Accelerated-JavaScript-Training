@@ -105,3 +105,42 @@ console.log(Object.getPrototypeOf(personP));
 console.log(Object.getPrototypeOf(personAnna) == personP);
 
 
+// CONSTRUCTOR FUNCTIONS
+console.log('\nCONSTRUCTOR FUNCTIONS>>>');
+function PersonC() {
+  this.name = 'Hec';
+  this.greet = function (){
+    console.log('Hello, I am ' + this.name);
+  };
+}
+
+
+// Las definiciones de propiedades y las funciones
+// inicializadas en la funcion contructora
+// predominan, por sobre las  definicones
+// agregadas al prototype de la funcion constructora
+PersonC.prototype.name = 'Banana';
+PersonC.prototype.greet = function () {
+  console.log('Hello!');
+};
+
+var person = new PersonC();
+console.log(person.name);
+person.greet();
+
+person.name = 'Aine';
+console.log(person.name);
+person.greet();
+
+PersonC.prototype.name = 'Melon';
+PersonC.prototype.greetGeneral = function (){
+  console.log('Hello!');
+};
+
+var anotherPerson = new PersonC();
+anotherPerson.greet();
+anotherPerson.greetGeneral();
+
+console.log(person instanceof PersonC);
+
+
