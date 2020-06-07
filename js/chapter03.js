@@ -29,3 +29,24 @@ var anotherArray = array;
 array = ['a', 'b'];
 console.log(array);
 console.log(anotherArray);
+
+
+// GLOBAL VS LOCAL SCOPE EXERCISE
+console.log('\nGLOBAL VS LOCAL SCOPE EXERCISE>>>');
+var test = 'Global scope';
+function localScope() {
+  var test = 'Local scope';
+  console.log(test);
+}
+localScope();
+console.log(test);
+
+// JS auto Define una variable GLOBAL
+// cuando detecta asignacion de varisables
+// sin definicion previa.
+function localScope() {
+  testAutoDefine = 'Local scope';
+  console.log(testAutoDefine);
+}
+localScope();
+console.log(testAutoDefine);
