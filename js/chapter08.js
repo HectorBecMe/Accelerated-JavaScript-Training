@@ -76,3 +76,22 @@ var rnd = Math.floor(Math.random() * 100) + 1;
 console.log(rnd);
 
 
+// THE DATE OBJECT
+console.log('\nTHE DATE OBJECT>>>');
+var today = new Date();
+console.log(today.toString());
+
+var anotherDay = new Date(1980, 5, 22);
+console.log(anotherDay);
+
+var anotherDay = new Date('1980/05/22');
+console.log(anotherDay);
+
+console.log(Date.parse('2020/06/02'));
+
+console.log(today.getDate());
+console.log(today.getDay());
+console.log(today.getMonth());
+console.log(today.getFullYear());
+
+
