@@ -34,3 +34,17 @@ console.log(a.toFixed());
 console.log(a.toFixed(2));
 
 
+// STRING FUNCTIONS
+console.log('\nSTRING FUNCTIONS>>>');
+var string = ' Any text';
+
+console.log(string.length);
+console.log(string[3]);
+console.log(string.charAt(3));
+console.log(string.concat(' ...add a new string'));
+console.log(string.toUpperCase());
+console.log(string.toLowerCase());
+console.log(string.split(' '));
+console.log(string.trim());
+
+
