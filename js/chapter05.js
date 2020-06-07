@@ -33,3 +33,13 @@ console.log(person['first-name']);
 console.log('\nPROPERTIES THIS>>>');
 person.name = 'Aine';
 console.log(person);
+
+
+// ALTERNATIVE WAY OF CREATING OBJECTS USING THE OBJECT CONSTRUCTOR
+console.log('\nALTERNATIVE WAY OF CREATING OBJECTS USING THE OBJECT CONSTRUCTOR>>>');
+var anotherPerson = new Object();
+anotherPerson.name = 'Mar';
+anotherPerson.age = 40;
+console.log(anotherPerson);
+
+
