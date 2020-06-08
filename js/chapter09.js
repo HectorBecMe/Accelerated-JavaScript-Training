@@ -41,14 +41,23 @@ document.body.children[0].children[0].style.backgroundColor = 'blue';
 
 // TRAVERSING THE DOM
 console.log('\nTRAVERSING THE DOM>>>');
-// LONG WAY
+// THE LONG WAY
 console.log(document.body.children[0].children[0]);
 
-// BETTER WAY
+// THE BETTER WAY
 console.log(document.body.lastElementChild);
 console.log(document.body.firstElementChild);
 console.log(document.body.firstElementChild.firstElementChild);
 console.log(document.body.firstElementChild.firstElementChild.nextElementSibling);
 console.log(document.body.firstElementChild.firstElementChild.parentElement);
+
+
+// SELECTING ELEMENTS
+console.log('\nSELECTING ELEMENTS>>>');
+// ANOTHER BEST WAY
+console.log(document.getElementsByTagName('li'));
+console.log(document.getElementsByClassName('simple'));
+console.log(document.getElementById('Link2'));
+console.log(document.getElementsByName('Link3'));
 
 
