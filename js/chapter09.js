@@ -81,3 +81,16 @@ document.querySelectorAll('.simple')[1].style.backgroundColor = 'yellow';
 document.querySelector('.simple').firstElementChild.textContent = 'Hello!';
 
 
+// CREATING AND INSERTING ELEMENTS
+console.log('\nCREATING AND INSERTING ELEMENTS>>>');
+var p = document.createElement('p');
+p.textContent = 'JUA JUA JU!';
+p.style.fontSize = '17px';
+console.log(p);
+
+var li = document.querySelector('li');
+var a = li.firstElementChild;
+li.append(p);
+li.insertBefore(p, a);
+
+
