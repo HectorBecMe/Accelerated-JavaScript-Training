@@ -61,3 +61,16 @@ console.log(document.getElementById('Link2'));
 console.log(document.getElementsByName('Link3'));
 
 
+// SELECTING ELEMENTS WITH QUERY SELECTOR
+// THE VERY BEST WAY
+console.log('\nSELECTING ELEMENTS WITH QUERY SELECTOR>>>');
+console.log(document.querySelector('h1'));
+console.log(document.querySelectorAll('li'));
+console.log(document.querySelector('.simple'));
+console.log(document.querySelectorAll('.simple'));
+console.log(document.querySelector('#Link2'));
+console.log(document.querySelector('[name="Link3"]'));
+
+document.querySelector('h1').style.backgroundColor = 'purple';
+
+
