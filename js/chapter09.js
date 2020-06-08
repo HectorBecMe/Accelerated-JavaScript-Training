@@ -74,3 +74,10 @@ console.log(document.querySelector('[name="Link3"]'));
 document.querySelector('h1').style.backgroundColor = 'purple';
 
 
+// // SELECTING ELEMENTS EXERCISES
+console.log('\nSELECTING ELEMENTS EXERCISES>>>');
+document.querySelector('a').style.backgroundColor = 'red';
+document.querySelectorAll('.simple')[1].style.backgroundColor = 'yellow';
+document.querySelector('.simple').firstElementChild.textContent = 'Hello!';
+
+
