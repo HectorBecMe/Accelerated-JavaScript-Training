@@ -51,7 +51,9 @@ function innerListener(event) {
 }
 
 var outer = document.querySelector('#outer');
-outer.addEventListener('click', outerListener);
+// INVIERTE EL ORDEN DE EJECUCION DE LOS EVENTOS
+// ACTIVA LA PROPAGACION DE EVENTOS
+outer.addEventListener('click', outerListener, true);
 function outerListener(event) {
   console.log('Clicked outer!');
 }
