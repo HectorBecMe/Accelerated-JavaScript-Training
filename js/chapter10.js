@@ -42,8 +42,11 @@ var inner = document.querySelector('#inner');
 
 inner.addEventListener('click', innerListener);
 function innerListener(event) {
-  console.log(event.bubbles);
-  event.stopPropagation();   
+  console.log(event.bubbles);  
+  event.stopPropagation();
+  console.log(event.target);
+  event.target.style.backgroundColor = 'red';
+  console.log(event.clientX, event.clientY);
   console.log('Clicked inner!');
 }
 
@@ -52,5 +55,3 @@ outer.addEventListener('click', outerListener);
 function outerListener(event) {
   console.log('Clicked outer!');
 }
-
-
