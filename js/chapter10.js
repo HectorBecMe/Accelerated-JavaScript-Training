@@ -36,3 +36,21 @@ setTimeout(function() {
 }, 5000);
 
 
+// EVENT BEHAVIOR AND PROPERTIES AND PROPAGATION ORDER
+console.log('\nEVENT BEHAVIOR AND PROPERTIES AND PROPAGATION ORDER>>>');
+var inner = document.querySelector('#inner');
+
+inner.addEventListener('click', innerListener);
+function innerListener(event) {
+  console.log(event.bubbles);
+  event.stopPropagation();   
+  console.log('Clicked inner!');
+}
+
+var outer = document.querySelector('#outer');
+outer.addEventListener('click', outerListener);
+function outerListener(event) {
+  console.log('Clicked outer!');
+}
+
+
