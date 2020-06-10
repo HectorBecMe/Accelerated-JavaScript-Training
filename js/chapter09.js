@@ -94,3 +94,10 @@ li.append(p);
 li.insertBefore(p, a);
 
 
+// DELETING ELEMENTS
+console.log('\nDELETING ELEMENTS>>>');
+var a = document.querySelectorAll('a')[1];
+a.parentElement.removeChild(a); // Soportado en navegadores viejos
+//a.remove(); // Soportado en navegadores modernos
+
+
