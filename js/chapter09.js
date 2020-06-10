@@ -101,3 +101,8 @@ a.parentElement.removeChild(a); // Soportado en navegadores viejos
 //a.remove(); // Soportado en navegadores modernos
 
 
+// DIALOGS
+console.log('\nDIALOGS>>>');
+alert('this an alert!');
+console.log(confirm('Are you sure?'));
+console.log(prompt('Your name?'));
