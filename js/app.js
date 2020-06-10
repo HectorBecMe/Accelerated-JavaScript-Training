@@ -1,1 +1,7 @@
-console.log('Hello there!');
+'strict mode';
+
+searchButton.addEventListener('click', searchWeather);
+
+function searchWeather() {
+  console.log(searchCity.value);
+}
