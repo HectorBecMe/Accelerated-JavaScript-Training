@@ -3,7 +3,8 @@
 searchButton.addEventListener('click', searchWeather);
 
 function searchWeather() {
-  console.log(searchCity.value);
+  loadingText.style.display = 'block';  
+  weatherBox.style.display = 'none';
 
   var cityName = searchCity.value;
   if (cityName.trim().length == 0) {
@@ -13,7 +14,7 @@ function searchWeather() {
   var http = new XMLHttpRequest();
   var apikey  = 'c3b811062d9b2c5e20feaa709667f4f7';
 
-  url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + apikey;
+  url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=metric&appid=' + apikey;
   var method = 'GET';
 
   http.open(method, url);
@@ -21,11 +22,21 @@ function searchWeather() {
     if (http.readyState == XMLHttpRequest.DONE && http.status === 200){
       var data = JSON.parse(http.responseText);
       var weatherData = new Weather(cityName, data.weather[0].description.toUpperCase());
-      weatherData.temperature = data.main.temp;
-      console.log(weatherData);
+      weatherData.temperature = data.main.temp;      
+      updateWeather(weatherData);
     } else if (http.readyState === XMLHttpRequest.DONE) {
       alert('Someting went wrong!');
     }
   };
   http.send();
+}
+
+function updateWeather(weatherData) {
+  console.log(weatherData);
+  weatherCity.textContent = weatherData.cityName;
+  weatherDescription.textContent = weatherData.description;
+  weatherTemperature.textContent = weatherData.temperature;
+
+  loadingText.style.display = 'none';
+  weatherBox.style.display = 'block';
 }
